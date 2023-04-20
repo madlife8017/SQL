@@ -130,24 +130,6 @@ SELECT
 FROM employees
 WHERE commission_pct IS NOT NULL
 GROUP BY department_id;
-SELECT * FROM
-    (
-    SELECT
-        TO_CHAR(TO_DATE(test,'YY/MM/DD'),'MMDD') AS mm, name
-    FROM
-        (
-            SELECT 'È«±æµ¿' AS name, '20230418' AS test FROM dual UNION ALL
-            SELECT '±èÃ¶¼ö', '20230301' FROM dual UNION ALL
-            SELECT '¹Ú¿µÈñ', '20230201' FROM dual UNION ALL
-            SELECT '±è»Ç»ß', '20230501' FROM dual UNION ALL
-            SELECT '¹Ú¶Ñ¶ì', '20230601' FROM dual UNION ALL
-            SELECT '±èÅ×½ºÆ®', '20230701' FROM dual
-        )
-    )
-WHERE mm='0418';
-
-
-
 
 
 
