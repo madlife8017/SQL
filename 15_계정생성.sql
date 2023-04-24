@@ -67,6 +67,10 @@ DROP TABLESPACE user_tablespace INCLUDING CONTENTS;
 DROP TABLESPACE user_tablespace INCLUDING CONTENTS AND DATAFILES;
 
 
+SELECT * FROM members;
+Select * from employees;
+
+
 
 
 
